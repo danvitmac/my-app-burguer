@@ -1,0 +1,103 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Hamburgueria",
+    "dateExported": "2023-02-22T11:08:34.765Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2688179e-9571-4db2-9bdc-789c711a8c92",
+            "colId": "60641131-1861-4e56-bfcf-191aa07752ee",
+            "containerId": "",
+            "name": "Cria pedido(s)",
+            "url": "http://localhost:3001/order",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-01T16:37:28.766Z",
+            "modified": "2023-02-22T11:00:40.547Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"order\" : \"X- Salada, 2 batatas grandes, 1 Coca-cola\",\n\"clientName\" :\"José\",\n\"price\": 44.5\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0f20fa0c-33f2-47bd-be76-7a2ce2c10855",
+            "colId": "60641131-1861-4e56-bfcf-191aa07752ee",
+            "containerId": "",
+            "name": "Visualiza todos os pedidos",
+            "url": "http://localhost:3001/order",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-02-01T17:58:42.300Z",
+            "modified": "2023-02-22T11:00:29.664Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9e7a5b92-5296-41b3-b875-ea6bd166c466",
+            "colId": "60641131-1861-4e56-bfcf-191aa07752ee",
+            "containerId": "",
+            "name": "Altera pedido(s)",
+            "url": "http://localhost:3001/order/f64f60cf-31fb-4ab1-884a-d4bf582dbf59",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-02-01T18:02:07.698Z",
+            "modified": "2023-02-22T11:02:10.248Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"order\" : \"X- Burguer, 1 batatas grandes, 1 coca-zero\",\n\"clientName\" :\"Maria\",\n\"price\": 40.00\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8801b425-41be-4c42-848e-2135fd780ab0",
+            "colId": "60641131-1861-4e56-bfcf-191aa07752ee",
+            "containerId": "",
+            "name": "Deleta pedido(s)",
+            "url": "http://localhost:3001/order/6a1c43e4-a7b3-459c-bc92-b90c03776d14",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-02-02T15:28:39.026Z",
+            "modified": "2023-02-22T11:03:42.865Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "59d7ac5a-23e7-41eb-9026-48b91872f7f9",
+            "colId": "60641131-1861-4e56-bfcf-191aa07752ee",
+            "containerId": "",
+            "name": "Visualiza um pedido",
+            "url": "http://localhost:3001/order/269cb317-719d-4a1e-b310-fc627409dc6e",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-02-02T15:40:43.084Z",
+            "modified": "2023-02-22T11:04:32.266Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8730cdf3-ee81-4466-8684-84074ae2546c",
+            "colId": "60641131-1861-4e56-bfcf-191aa07752ee",
+            "containerId": "",
+            "name": "Muda Status pedido para Pronto",
+            "url": "http://localhost:3001/order/f64f60cf-31fb-4ab1-884a-d4bf582dbf59",
+            "method": "PATCH",
+            "sortNum": 110000,
+            "created": "2023-02-03T13:10:10.513Z",
+            "modified": "2023-02-22T11:05:21.881Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
