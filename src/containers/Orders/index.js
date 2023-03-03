@@ -16,7 +16,7 @@ const Orders = () => {
     
     useEffect(() => {
         async function fetchCostumers(){
-            const { data: newCostumers } = await axios.get("http://localhost:3001/order")
+            const { data: newCostumers } = await axios.get("https://api-register-orders.vercel.app/order")
         setCostumer(newCostumers)
         }
         
@@ -24,7 +24,7 @@ const Orders = () => {
     }, [])
 
     async function deleteOrder(orderId){
-        await axios.delete(`http://localhost:3001/order/${orderId}`)
+        await axios.delete(`https://api-register-orders.vercel.app/order/${orderId}`)
         const newOrder = costumer.filter( order => order.id !== orderId);
 
         setCostumer(newOrder)

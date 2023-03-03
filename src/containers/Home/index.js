@@ -16,7 +16,7 @@ const App = () => {
 
     async function addNewOrder(){
 
-        const { data: newCostumer } = await axios.post("http://localhost:3001/order", { 
+        const { data: newCostumer } = await axios.post("https://api-register-orders.vercel.app/order", { 
             order:order.current.value, clientName:clientName.current.value,});        
         
         setCostumer([...costumer, newCostumer])
